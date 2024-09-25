@@ -1,8 +1,6 @@
 <?php
 
-$stop = "";
-
-while ($stop != "nee") {
+while (true) {
   $stop = readline("Wil je kop of munt spelen [Ja/Nee]: ");
   $stop = strtolower($stop); // zet de invoer om naar kleine letters
 

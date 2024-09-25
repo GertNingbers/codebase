@@ -4,7 +4,9 @@
 while (true) {
     $dia = readline("Voer de Diameter in: ");
     if (is_numeric($dia)) {
-        break; // exit the loop if the input is a number
+        break; // zorgt ervoor dat de while loop stopt wanneer de gebruiker een getal invoert
+
+
     } else {
         echo "Ongeldig invoer. Alleen cijfers zijn toegestaan.\n";
     }
