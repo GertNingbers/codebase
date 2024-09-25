@@ -16,10 +16,13 @@ $macht2 = $dia * $dia;
 $omtrek = $pi * $dia;
 $oppervlakte = $pi * 2 * $macht2;
 
+// Rond de omtrek en oppervlakte af tot twee achter de comma
+$omtrek = round($omtrek, 2);
+$oppervlakte = round($oppervlakte, 2);
 
 // Toont de resultaten
-echo "Pi: " . $pi . "\n";
-echo "Omtrek: " . $omtrek . "\n";
-echo "Oppervlakte: " . $oppervlakte . "\n";
+echo "Pi: $pi \n";
+echo "Omtrek: $omtrek m\n";
+echo "Oppervlakte: $oppervlakte m²\n";
 
 ?>
