@@ -5,12 +5,12 @@ while (true) {
     $gooi = strtolower($gooi); //zet alle letters om naar kleine letters
     
     if ($gooi != "nee" && $gooi !="ja") {// controle op juiste invoer
-        echo "Je mag alleen Gooi of Nee typen\n";
+        echo "Je mag alleen Ja of Nee typen\n";
     } elseif ($gooi == "nee") {
       exit ("Gestopt omdat je niet wou dobbellen.");
     } else {
     $random = rand(1,6);
-    echo "Je hebt $random gedobbeld.\n";
+    echo "Je hebt nummer $random gedobbeld.\n";
     }
 }
 ?>
