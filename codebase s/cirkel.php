@@ -6,7 +6,6 @@ while (true) {
     if (is_numeric($dia)) {
         break; // zorgt ervoor dat de while loop stopt wanneer de gebruiker een getal invoert
 
-
     } else {
         echo "Ongeldig invoer. Alleen cijfers zijn toegestaan.\n";
     }

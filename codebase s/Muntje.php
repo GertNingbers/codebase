@@ -1,5 +1,6 @@
 <?php
 
+// in een while zodat je zelf kan kiezen hoe vaak je de code wilt uitvoeren
 while (true) {
   $stop = readline("Wil je kop of munt spelen [Ja/Nee]: ");
   $stop = strtolower($stop); // zet de invoer om naar kleine letters
