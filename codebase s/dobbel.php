@@ -10,9 +10,11 @@ while (true) {
         echo "Je mag alleen Ja of Nee typen\n";
     } elseif ($gooi == "nee") {
       exit ("Gestopt omdat je niet wou dobbellen.");
-    } else {
-    $random = rand(1,6);
-    echo "Je hebt nummer $random gedobbeld.\n";
+    } 
+     //hier wordt de dobbelsteen gegooid
+      else {
+     $random = rand(1,6);
+     echo "Je hebt nummer $random gedobbeld.\n";
     }
 }
 ?>

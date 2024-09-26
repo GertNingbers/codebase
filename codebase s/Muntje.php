@@ -10,7 +10,9 @@ while (true) {
     echo "Fout je mag alleen 'Ja' of 'Nee' typen.\n";
   } elseif ($stop == "nee") {
     exit("Uw wou geen kop of munt spelen.");
-  } else { //hier begint de kop of munt pas als alle invoer goed is
+  } 
+    //hier begint de kop of munt pas als alle invoer goed is
+    else { 
     $random = rand(1,2);
     if ($random == 1) {
       echo "Het is Kop!\n"; 
