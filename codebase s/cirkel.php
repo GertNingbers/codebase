@@ -12,7 +12,7 @@ while (true) {
 }
 
 // Berekening van de omtrek en oppervlakte
-$pi = 3.1415926535898;
+$pi = pi();
 $straal = $dia / 2;
 $omtrek = $pi * $dia;
 $oppervlakte = $pi * $straal * $straal;

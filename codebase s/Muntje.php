@@ -6,19 +6,20 @@ while (true) {
   $stop = strtolower($stop); // zet de invoer om naar kleine letters
 
   //hier wordt de invoer gecontroleerd
-  if ($stop != "ja" && $stop != "nee") {
-    echo "Fout je mag alleen 'Ja' of 'Nee' typen.\n";
-  } elseif ($stop == "nee") {
-    exit("Uw wou geen kop of munt spelen.");
-  } 
-    //hier begint de kop of munt pas als alle invoer goed is
-    else { 
-    $random = rand(1,2);
-    if ($random == 1) {
+  if ($stop == "ja") {
+      $random = rand(1,2);
+
+      if ($random == 1) {
       echo "Het is Kop!\n"; 
     } elseif ($random == 2) {
       echo "Het is Munt!\n";
     }
+    
+  } elseif ($stop == "nee") {
+    exit("Uw wou geen kop of munt spelen.");
+  } 
+    else { 
+      echo "Fout je mag alleen 'Ja' of 'Nee' typen.\n";
   }
 }
 ?>
