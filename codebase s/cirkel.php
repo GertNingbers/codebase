@@ -13,9 +13,9 @@ while (true) {
 
 // Berekening van de omtrek en oppervlakte
 $pi = 3.1415926535898;
-$macht2 = $dia * $dia;
+$straal = $dia / 2;
 $omtrek = $pi * $dia;
-$oppervlakte = $pi * 2 * $macht2;
+$oppervlakte = $pi * $straal * $straal;
 
 // Rond de omtrek en oppervlakte af tot twee achter de comma
 $omtrek = round($omtrek, 2);
