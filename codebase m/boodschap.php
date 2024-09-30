@@ -17,9 +17,7 @@ $lijst = array();
 for ($teller = $begin; $teller <= $hoeveel; $teller++) {
     $boodschap = readline("welke boodschap wil je toevoegen.\n");
     array_push($lijst, $boodschap);
-        $string=implode("\n",$lijst);
+    $string = implode("\n", $lijst);
 }
 
 echo $string;
-
-?>
