@@ -1,5 +1,6 @@
 <?php
 
+// hier wordt invoer gechecked.
 while(true){
     $nummer1 = readline("Geef het DEELTAL hier: ");
     $nummer2 = readline ("En hier de DELER: ");
