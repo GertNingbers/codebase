@@ -17,12 +17,16 @@ while (true) {
         $geradenLetters = array_fill(0, $woordLengte, "_");
         $fouten = 0;
         $maxFouten = 8;
+        $beurten = 0;
 
         while (true) {
             echo implode(" ", $geradenLetters) . "\n";
             $letter = readline("Geef een letter: ");
             $letter = strtolower($letter);
-
+            $beurten++;
+            if (is_numeric($letter)){
+                echo "Je mag alleen maar letters invoeren!!!\n";
+            }
             if (strlen($letter) != 1) {
                 echo "Je mag alleen één letter invoeren!!!\n";
             } elseif (strpos($woord, $letter) !== false) {
@@ -33,6 +37,7 @@ while (true) {
                 }
                 if (!in_array("_", $geradenLetters)) {
                     echo "Je hebt het woord geraden! Het was: $woord\n";
+                    echo "je hebt er $beurten beurten over gedaan. \n";
                     break;
                 }
             } else {
@@ -40,9 +45,10 @@ while (true) {
                 echo "Fout! Je hebt nog $maxFouten - $fouten pogingen over.\n";
                 if ($fouten >= $maxFouten) {
                     echo "Je hebt verloren! Het woord was: $woord\n";
+                    echo "je hebt er $beurten beurten over gedaan. \n";
                     break;
                 }
-            }
+            } 
         }
     } else {
         echo "Je mag alleen ja of nee typen!!!.\n";
