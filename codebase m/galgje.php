@@ -17,6 +17,7 @@ while (true) {
         while (true){
         $letter = readline("Geef een letter: ");
         $letter = strtolower($letter);
+        
         }
     } 
         else {
