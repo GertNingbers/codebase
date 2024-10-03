@@ -16,13 +16,12 @@ $lijst = array();
 //hier wordt de invoer opgeslagen in een array en ook een lijstje gemaakt.
 for ($teller = $begin; $teller <= $hoeveel;) {
     $boodschap = readline("welke boodschap wil je toevoegen.\n");
-    if (ctype_alpha($boodschap)) {
-        array_push($lijst, $boodschap);
-        $string = implode("\n", $lijst);
+    if (preg_match('/[a-zA-Z]/', $boodschap)) {
+        array_push($lijst, " $teller. $boodschap ");
         $teller++;
     } else {
-        echo "je mag geen cijfers invoeren.\n";
+        echo "je mag geen invoer gebruiken die alleen maar cijfers bevatten er moeten letters in!!!\n";
     }
 }
 
-echo $string;
+echo implode("\n", $lijst);

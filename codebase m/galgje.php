@@ -1,6 +1,6 @@
 <?php
 
-$woorden = ["appel", "eikenboom", "koffie", "kasteel", "boeken", "kameel", "dolfijn", "orca", "hond", "stad", "voetbal", "geluk", "nederland", "holland", "schip", "zacht", "vocht", "wazig", "glijd", "afzak", "aarde", "cijfer", "engel", "aarde", "topper"];
+$woorden = ["appel", "eikenboom", "koffie", "kasteel", "boeken", "kameel", "dolfijn", "orca", "hond", "stad", "voetbal", "geluk", "nederland", "holland", "schip", "zacht", "vocht", "wazig", "glijd", "afzak", "aarde", "cijfer", "engel", "aarde", "topper", "galgje"];
 
 while (true) {
     $vraag = readline("Wil je galgje spelen [Ja/Nee]?: ");
@@ -58,5 +58,4 @@ while (true) {
             }
         }
     }
-} 
-?>
+}
