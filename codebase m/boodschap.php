@@ -10,11 +10,10 @@ while (true) {
     }
 }
 
-$begin = 1;
 $lijst = array();
 
 //hier wordt de invoer opgeslagen in een array en ook een lijstje gemaakt.
-for ($teller = $begin; $teller <= $hoeveel;) {
+for ($teller = 1; $teller <= $hoeveel;) {
     $boodschap = readline("welke boodschap wil je toevoegen.\n");
     if (preg_match('/[a-zA-Z]/', $boodschap)) {
         array_push($lijst, " $teller. $boodschap ");
