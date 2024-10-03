@@ -14,4 +14,4 @@ while (true) {
 $som = $nummer1 /  $nummer2;
 $som = round($som, 2);
 
-echo "Deeltal : $nummer1\nDeler : $nummer2\nAntwoord: $som";
+echo "Deeltal : $nummer1\nDeler : $nummer2\nsom: $nummer1 / $nummer2 = $som";
