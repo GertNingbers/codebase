@@ -4,7 +4,7 @@
 while (true) {
     $nummer1 = readline("Geef het DEELTAL hier: ");
     $nummer2 = readline("En hier de DELER: ");
-    if (is_numeric($nummer1) &&  is_numeric($nummer2)) {
+    if (is_numeric($nummer1) && is_numeric($nummer2)) {
         break;
     } else {
         echo "Je moet nummers invoeren.\n";

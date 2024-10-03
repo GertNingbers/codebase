@@ -16,7 +16,7 @@ while (true) {
         exit("Je wou geen galgje spelen.");
     }
 
-    //de woord wordt hier reandom gemaakt en dat woord weer naar een cijfer gemaakt.
+    //de woord wordt hier random gemaakt en dat wordt weer naar een cijfer gemaakt.
     $woord = $woorden[array_rand($woorden)];
     $woordLengte = strlen($woord);
     $geradenLetters = array_fill(0, $woordLengte, "_");

@@ -14,10 +14,15 @@ $begin = 1;
 $lijst = array();
 
 //hier wordt de invoer opgeslagen in een array en ook een lijstje gemaakt.
-for ($teller = $begin; $teller <= $hoeveel; $teller++) {
+for ($teller = $begin; $teller <= $hoeveel;) {
     $boodschap = readline("welke boodschap wil je toevoegen.\n");
-    array_push($lijst, $boodschap);
-    $string = implode("\n", $lijst);
+    if (ctype_alpha($boodschap)) {
+        array_push($lijst, $boodschap);
+        $string = implode("\n", $lijst);
+        $teller++;
+    } else {
+        echo "je mag geen cijfers invoeren.\n";
+    }
 }
 
 echo $string;
